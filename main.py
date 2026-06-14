@@ -1,4 +1,3 @@
-
 import kglab
 
 # Create a KnowledgeGraph object
