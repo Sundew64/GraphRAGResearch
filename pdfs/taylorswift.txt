@@ -1,0 +1,2 @@
+PDFs are from Taylor Swift Wikipedia page: https://en.wikipedia.org/wiki/Taylor_Swift
+PDFs are named as the page of the article. They are split by page as research shows that is the optimal token size for LLMs creating knowledge graphs.
