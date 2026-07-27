@@ -1,6 +1,6 @@
 import kglab
 
-from rdflib import Graph
+from rdflib_test import Graph
 print("running rdflib")
 g = Graph()
 g.parse('https://example.com')

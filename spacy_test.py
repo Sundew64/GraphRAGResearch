@@ -1,5 +1,7 @@
 import spacy
 
+triples_list = []
+
 """
 SPACY DEPENDENCY LABELS:
 ROOT     -- main verb
@@ -20,13 +22,41 @@ with open(r"C:\Users\ihita\OneDrive - Lake Washington School District\_2025-2026
 
 doc = nlp(text)
 
-sentence = list(doc.sents)[0]
+sentence = list(doc.sents)[3]
 
-print(sentence.text)
+for sentence in list(doc.sents):
+    print(sentence.text)
 
-for token in sentence:
-    print(
-        token.text,
-        token.dep_,
-        token.head.text
-    )
+    subject = None
+    verb = None
+    obj = None
+
+    for token in sentence:
+        if token.dep_ == "nsubj":
+            subject = token.text
+
+            for child in token.lefts:
+                if child.dep_ == "compound":
+                    subject = child.text + " " + subject
+
+        elif token.dep_ == "ROOT":
+            verb = token.text
+
+        elif token.dep_ in ("dobj", "obj"):
+            obj = token.text
+            for child in token.lefts:
+                if child.dep_ == "compound":
+                    subject = child.text + " " + subject
+    
+    print("Subject:", subject)
+    print("Verb:", verb)
+    print("Object:", obj)
+
+    if subject and verb and obj:
+        triple = (subject, verb, obj)
+        print(triple)
+        triples_list.append(triple)
+
+
+
+print(triples_list)
