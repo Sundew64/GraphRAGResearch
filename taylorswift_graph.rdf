@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://taylorswiftkg.org/relation/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/album_Swift">
+    <ns1:released rdf:resource="http://taylorswiftkg.org/entity/four"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/media_scrutiny">
+    <ns1:recalibrated rdf:resource="http://taylorswiftkg.org/entity/Reputation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/Hot_You">
+    <ns1:Knew rdf:resource="http://taylorswiftkg.org/entity/100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/Me">
+    <ns1:accumulated rdf:resource="http://taylorswiftkg.org/entity/Space"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/crossover_You">
+    <ns1:Teardrops rdf:resource="http://taylorswiftkg.org/entity/success"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/She">
+    <ns1:explored rdf:resource="http://taylorswiftkg.org/entity/folk"/>
+  </rdf:Description>
+</rdf:RDF>

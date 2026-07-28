@@ -47,6 +47,14 @@ for sentence in list(doc.sents):
             for child in token.lefts:
                 if child.dep_ == "compound":
                     subject = child.text + " " + subject
+
+        print(
+                token.text,
+                token.dep_,
+                token.head.text
+            )
+
+    
     
     print("Subject:", subject)
     print("Verb:", verb)
