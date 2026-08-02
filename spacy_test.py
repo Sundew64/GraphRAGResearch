@@ -1,6 +1,7 @@
 import spacy
 
 triples_list = []
+sentence_triples_list = []
 
 """
 SPACY DEPENDENCY LABELS:
@@ -30,8 +31,12 @@ for sentence in list(doc.sents):
     subject = None
     verb = None
     obj = None
+    sentenceNum = None
 
-    for token in sentence:
+    for i in range(len(sentence)):
+        sentenceNum = i
+        token = sentence[i]
+
         if token.dep_ == "nsubj":
             subject = token.text
 
@@ -46,7 +51,7 @@ for sentence in list(doc.sents):
             obj = token.text
             for child in token.lefts:
                 if child.dep_ == "compound":
-                    subject = child.text + " " + subject
+                    obj = child.text + " " + obj
 
         print(
                 token.text,
@@ -54,17 +59,22 @@ for sentence in list(doc.sents):
                 token.head.text
             )
 
-    
-    
+
+    #add sentence numbers
+    #automate rule patterns
+
+
     print("Subject:", subject)
     print("Verb:", verb)
     print("Object:", obj)
 
     if subject and verb and obj:
         triple = (subject, verb, obj)
-        print(triple)
         triples_list.append(triple)
+        triple = ("Sentence: " + str(sentenceNum), subject, verb, obj)
+        sentence_triples_list.append(triple)
+        print(triple)
 
 
 
-print(triples_list)
+print(sentence_triples_list)
