@@ -59,8 +59,6 @@ for sentence in list(doc.sents):
                 token.head.text
             )
 
-
-    #add sentence numbers
     #automate rule patterns
 
 
