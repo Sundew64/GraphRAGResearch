@@ -61,6 +61,8 @@ for pg in range(1, 11):
                     obj
                 )
                 sentence_triples_list.append(triple)
+                triple = (subject, verb, obj)
+                triples_list.append(triple)
 
 
 print(sentence_triples_list)
