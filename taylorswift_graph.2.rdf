@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://taylorswiftkg.org/relation/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/who">
+    <ns1:was rdf:resource="http://taylorswiftkg.org/entity/film"/>
+    <ns1:rejected rdf:resource="http://taylorswiftkg.org/entity/song.[24"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/she">
+    <ns1:has rdf:resource="http://taylorswiftkg.org/entity/fanbase"/>
+    <ns1:was rdf:resource="http://taylorswiftkg.org/entity/songs"/>
+    <ns1:attended rdf:resource="http://taylorswiftkg.org/entity/preschool"/>
+    <ns1:attended rdf:resource="http://taylorswiftkg.org/entity/Senior_School.[15][16"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/her">
+    <ns1:named rdf:resource="http://taylorswiftkg.org/entity/unisex_name"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/record">
+    <ns1:sold rdf:resource="http://taylorswiftkg.org/entity/copies"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/Swift">
+    <ns1:aspired rdf:resource="http://taylorswiftkg.org/entity/demo_tapes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/accolades">
+    <ns1:include rdf:resource="http://taylorswiftkg.org/entity/Grammy_Awards"/>
+  </rdf:Description>
+</rdf:RDF>

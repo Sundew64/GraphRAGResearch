@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://taylorswiftkg.org/relation/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/Taylor_Swift">
+    <ns1:pinned rdf:resource="http://taylorswiftkg.org/entity/Swift"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/Belong">
+    <ns1:won rdf:resource="http://taylorswiftkg.org/entity/Female_Best_Video"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/she">
+    <ns1:interrupted rdf:resource="http://taylorswiftkg.org/entity/appearance.[79][80"/>
+    <ns1:was rdf:resource="http://taylorswiftkg.org/entity/opening"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/She">
+    <ns1:had rdf:resource="http://taylorswiftkg.org/entity/songs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/White_Horse">
+    <ns1:won rdf:resource="http://taylorswiftkg.org/entity/Country_Song"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/co">
+    <ns1:made rdf:resource="http://taylorswiftkg.org/entity/Taylor_-_Lautner.[83"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/It">
+    <ns1:won rdf:resource="http://taylorswiftkg.org/entity/awards"/>
+  </rdf:Description>
+  <rdf:Description rdf:about='http://taylorswiftkg.org/entity/Fearless"—all'>
+    <ns1:was rdf:resource="http://taylorswiftkg.org/entity/10"/>
+  </rdf:Description>
+</rdf:RDF>

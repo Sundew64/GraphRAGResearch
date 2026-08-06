@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://taylorswiftkg.org/relation/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/Ours">
+    <ns1:wrote rdf:resource="http://taylorswiftkg.org/entity/number"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/Red_Tour">
+    <ns1:named rdf:resource="http://taylorswiftkg.org/entity/chart.[102"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/which">
+    <ns1:dated rdf:resource="http://taylorswiftkg.org/entity/collaborations"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/Highway">
+    <ns1:wrote rdf:resource='http://taylorswiftkg.org/entity/Care".[109][110'/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/roles">
+    <ns1:included rdf:resource="http://taylorswiftkg.org/entity/voice_role"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/She">
+    <ns1:won rdf:resource="http://taylorswiftkg.org/entity/Entertainment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/Swift">
+    <ns1:embarked rdf:resource="http://taylorswiftkg.org/entity/World_Now_Tour"/>
+    <ns1:wrote rdf:resource="http://taylorswiftkg.org/entity/Grammy_Award"/>
+  </rdf:Description>
+</rdf:RDF>

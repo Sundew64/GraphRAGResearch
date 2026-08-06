@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://taylorswiftkg.org/relation/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/family">
+    <ns1:transferred rdf:resource="http://taylorswiftkg.org/entity/break"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/she">
+    <ns1:worked rdf:resource="http://taylorswiftkg.org/entity/debut_album"/>
+    <ns1:left rdf:resource="http://taylorswiftkg.org/entity/her"/>
+    <ns1:became rdf:resource="http://taylorswiftkg.org/entity/track"/>
+    <ns1:opened rdf:resource="http://taylorswiftkg.org/entity/singer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/Nathan">
+    <ns1:spent rdf:resource="http://taylorswiftkg.org/entity/single"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/Teardrops">
+    <ns1:was rdf:resource="http://taylorswiftkg.org/entity/Contemporary_charts.[54][55"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/Swift">
+    <ns1:modeled rdf:resource="http://taylorswiftkg.org/entity/development_deal"/>
+    <ns1:finalized rdf:resource="http://taylorswiftkg.org/entity/relationship"/>
+    <ns1:promoted rdf:resource="http://taylorswiftkg.org/entity/album"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/who">
+    <ns1:was rdf:resource="http://taylorswiftkg.org/entity/record_label"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/father">
+    <ns1:signed rdf:resource="http://taylorswiftkg.org/entity/percent_stake"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://taylorswiftkg.org/entity/She">
+    <ns1:spent rdf:resource="http://taylorswiftkg.org/entity/copies"/>
+  </rdf:Description>
+</rdf:RDF>

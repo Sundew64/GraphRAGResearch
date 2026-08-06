@@ -16,63 +16,51 @@ pobj     -- object of a preposition
 
 nlp = spacy.load("en_core_web_sm")
 
-with open(r"C:\Users\ihita\OneDrive - Lake Washington School District\_2025-2026\Other\Research\PDFs\1.1.txt",
-          "r",
-          encoding="utf-8") as f:
-    text = f.read()
+for pg in range(1, 11):
+    filepath = fr"C:\Users\ihita\OneDrive - Lake Washington School District\_2025-2026\Other\Research\PDFs\{pg}.1.txt"
 
-doc = nlp(text)
+    with open(filepath, "r", encoding="utf-8") as f:
+        text = f.read()
 
-sentence = list(doc.sents)[3]
+    doc = nlp(text)
 
-for sentence in list(doc.sents):
-    print(sentence.text)
+    paragraphs = text.split("\n\n")
 
-    subject = None
-    verb = None
-    obj = None
-    sentenceNum = None
+    for para, paragraph in enumerate(paragraphs, start=1):
+        doc = nlp(paragraph)
 
-    for i in range(len(sentence)):
-        sentenceNum = i
-        token = sentence[i]
+        for sent, sentence in enumerate(doc.sents, start=1):
 
-        if token.dep_ == "nsubj":
-            subject = token.text
+            subject = None
+            verb = None
+            obj = None
 
-            for child in token.lefts:
-                if child.dep_ == "compound":
-                    subject = child.text + " " + subject
+            for token in sentence:
+                if token.dep_ == "nsubj":
+                    subject = token.text
+                    for child in token.lefts:
+                        if child.dep_ == "compound":
+                            subject = child.text + " " + subject
 
-        elif token.dep_ == "ROOT":
-            verb = token.text
+                elif token.dep_ == "ROOT":
+                    verb = token.text
 
-        elif token.dep_ in ("dobj", "obj"):
-            obj = token.text
-            for child in token.lefts:
-                if child.dep_ == "compound":
-                    obj = child.text + " " + obj
+                elif token.dep_ in ("dobj", "obj"):
+                    obj = token.text
+                    for child in token.lefts:
+                        if child.dep_ == "compound":
+                            obj = child.text + " " + obj
 
-        print(
-                token.text,
-                token.dep_,
-                token.head.text
-            )
-
-    #automate rule patterns
-
-
-    print("Subject:", subject)
-    print("Verb:", verb)
-    print("Object:", obj)
-
-    if subject and verb and obj:
-        triple = (subject, verb, obj)
-        triples_list.append(triple)
-        triple = ("Sentence: " + str(sentenceNum), subject, verb, obj)
-        sentence_triples_list.append(triple)
-        print(triple)
-
+            if subject and verb and obj:
+                triple = (
+                    pg,
+                    para,
+                    sent,
+                    subject,
+                    verb,
+                    obj
+                )
+                sentence_triples_list.append(triple)
 
 
 print(sentence_triples_list)
