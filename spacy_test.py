@@ -145,5 +145,5 @@ for pg in range(1, 11):
 
                         sentence_triples_list.append(triple)
 
-for triple in sentence_triples_list:
-    print(triple)
+#for triple in sentence_triples_list:
+    #print(triple)
